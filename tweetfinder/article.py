@@ -98,7 +98,7 @@ class Article:
         """Does this webpage have any embedded tweets?"""
         return len(self._embeds) > 0
 
-    def mentions_tweets(self) -> int:
+    def mentions_tweets(self) -> bool:
         """Does this webpage mention any tweets?"""
         return len(self._mentions) > 0
 
